@@ -1,0 +1,108 @@
+.SideBar {
+    background-color: rgba(248, 248, 248);
+    border-radius:  0.9375rem;
+    width: 15rem;
+    align-items: center;
+    z-index: 2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+}
+
+.btn{
+    color: white;
+    background-color: rgb(255, 168, 17);
+    cursor: pointer;
+    width: 80%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.SideBar .Runingicon {
+    position: relative;  
+}
+
+
+.SideBar .Joggingicon {
+ 
+    position: relative;
+}
+
+.SideBar .Swimmingicon {
+
+    position: relative;
+}
+
+.SideBar .Yogaicon {
+   
+    position: relative;
+}
+
+.SideBar .Aerobicicon {
+    
+    position: relative;
+}
+
+.SideBar .Strengthtrainningicon {
+    
+    position: relative;
+}
+
+.SideBar .Plusicon {
+    position: relative;
+}
+
+.SideBar .Addposticon {
+    position: relative;
+    padding-top: 1.4rem;
+    
+}
+.SideBar .Othersicon {
+    position: relative;
+    padding-top: 1.4rem;
+}
+
+// icon img
+
+.Runingicon img {
+    height: 1.4rem;
+}
+
+.Joggingicon img {
+    height: 1.4rem;
+}
+
+.Swimmingicon img {
+    height: 1.4rem;
+    margin-right: .3rem;
+}
+
+.Yogaicon img {
+    height: 1.4rem;
+}
+
+.Aerobicicon img {
+    height: 1.4rem;
+}
+
+.Strengthtrainningicon img {
+    height: 1.4rem;
+    margin-right: 0.5rem;
+   
+}
+
+.Addposticon img {
+    margin-right: 0.5rem;
+}
+

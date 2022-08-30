@@ -1,0 +1,131 @@
+.register {
+    //จัดกลางหน้าจอ จาก google
+    // top: 50%;  
+    // left: 50%;  
+    // transform: translate(-50%, -50%);
+    position: fixed;
+    top: 20%;  
+    left: 33%;
+    margin: 10px auto;
+    width: 30%;
+    border: 0.1px solid rgba(0, 0, 0, 0);
+    background: linear-gradient(180deg, rgba(242, 95, 41, 0.96) 4.69%, rgba(174, 10, 250, 0.96) 38.02%);
+    padding: 3px;
+    border-radius: 1.5em;
+    
+    form {
+        height: 480px;
+        width: 100%;
+        background-color: rgba(65, 65, 113, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1.5em; // border-radiusคือความโค้งของกล่องที่เก็บ
+
+        h1 {
+            color: rgb(252, 252, 252);
+            text-align: center;
+            margin: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contentRegister {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .listContentRegister{
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                height: 40px;
+                margin: 5px;
+                // background-color: white;
+                border: 0.1px solid rgba(3, 3, 3, 0); // กำหนดเพื่อจัดให้เท่ากัน
+            }
+
+            input::placeholder { //placeholder คือแสดงข้อความในกล่อง text
+                font-weight: bold;
+                opacity: 0.8;
+                color: rgb(5, 5, 5);
+                text-align: center;
+            }
+
+            input {
+                height: 40px;
+                width: 90%;
+                margin: 5px;
+                padding: 0;
+                border: 0.1px solid rgba(3, 3, 3, 0); // กำหนดเพื่อจัดให้เท่ากัน
+            }
+
+            .inputUserPhoto {
+                padding: auto 5px;
+            }
+        }
+    }
+
+    button {
+        height: 50px;
+        width: 45%;
+        background-color: #AE0AFA;
+        color: white;
+        border-radius: 0.5em;
+        font-size: 1.2rem;
+        font-weight: 300;
+        cursor: pointer;
+        border: #AE0AFA;
+    }
+
+    button:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), conic-gradient(from 180deg at 50% 50%, #AE0AFA -60deg, #F25F29 52.5deg, #AE0AFA 300deg, #F25F29 412.5deg);
+        border-radius: 0.5em;
+    }
+
+    .underRegister {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        h3 {
+            margin: 10px;
+            span {
+                color: white;
+                text-decoration: none; //text-decorationคือเอาเส้นใต้ออก
+                font-size: 1rem;
+                font-weight: 200;
+            }
+            span:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .register {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .register {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .register {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .register {
+        font-size: 12px;
+        width: 90%;
+        height: 450px;
+        form {
+            height: 430px;
+            width: 100%;
+        }
+    }
+}
